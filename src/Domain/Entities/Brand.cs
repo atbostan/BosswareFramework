@@ -21,7 +21,6 @@ namespace Domain.Entities
             Id = id;
             Name = name;
 
-
         }
     }
 }
