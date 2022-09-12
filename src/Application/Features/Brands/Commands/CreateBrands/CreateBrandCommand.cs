@@ -1,4 +1,5 @@
-﻿using Application.Features.Brands.Dtos.Brand;
+﻿using Application.Features.Brands.Dtos.Requests;
+using Application.Features.Brands.Dtos.Responses;
 using Application.Features.Brands.Rules;
 using Application.Repositories;
 using AutoMapper;

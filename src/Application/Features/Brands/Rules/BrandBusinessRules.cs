@@ -26,5 +26,11 @@ namespace Application.Features.Brands.Rules
             if (result.Items.Any()) throw new BusinessException("Brand name is already exist");
         }
 
+
+        public async Task BrandIdIsNotExist(long id)
+        {
+            Brand result = await _brandRepository.GetAsync(x => x.Id == id);
+            if (result == null) throw new BusinessException("There is no brand with given id");
+        }
     }
 }
